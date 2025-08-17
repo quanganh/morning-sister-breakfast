@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# Nice Bakery Website Deployment Script for S3 Folder
-# This script deploys to: s3://clomo-mdm-backup/uploads/html/sites/bakery/
+# The Morning Sister Breakfast Website Deployment Script for S3 Folder
+# This script deploys to: s3://clomo-mdm-backup/uploads/html/sites/breakfast/
 
 # Configuration
 BUCKET_NAME="clomo-mdm-backup"
-S3_FOLDER="uploads/html/sites/bakery"
-AWS_REGION="us-east-1"  # Change this to your preferred region
+S3_FOLDER="uploads/html/sites/breakfast"
+AWS_REGION="ap-southeast-2"  # Sydney, Australia region
 
 # Colors for output
 RED='\033[0;31m'
@@ -15,7 +15,7 @@ YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
-echo -e "${GREEN}🥖 Nice Bakery Website Deployment Script 🥪${NC}"
+echo -e "${GREEN}🌅 The Morning Sister Breakfast Website Deployment Script 🍽️${NC}"
 echo "=================================================="
 echo -e "${BLUE}Target: s3://$BUCKET_NAME/$S3_FOLDER/${NC}"
 echo ""
@@ -32,6 +32,14 @@ if ! aws sts get-caller-identity &> /dev/null; then
     echo -e "${RED}❌ AWS CLI is not configured. Please run 'aws configure' first.${NC}"
     exit 1
 fi
+
+# Check bucket public access settings
+# echo -e "${YELLOW}🔒 Checking bucket public access settings...${NC}"
+# aws s3api get-public-access-block --bucket $BUCKET_NAME
+# echo -e "${YELLOW}⚠️  If you see 'BlockPublicAcls: true', you need to update your bucket policy.${NC}"
+# echo -e "${YELLOW}   Run the following command to allow public access:${NC}"
+# echo -e "${BLUE}   aws s3api put-public-access-block --bucket $BUCKET_NAME --public-access-block-configuration BlockPublicAcls=false,IgnorePublicAcls=false,BlockPublicPolicy=false,RestrictPublicBuckets=false${NC}"
+# echo ""
 
 # Check if bucket exists
 if aws s3 ls "s3://$BUCKET_NAME" 2>&1 | grep -q 'NoSuchBucket'; then
@@ -62,8 +70,7 @@ echo -e "${YELLOW}📤 Uploading website files...${NC}"
 # Upload HTML files
 echo "Uploading HTML files..."
 aws s3 cp index.html "s3://$BUCKET_NAME/$S3_FOLDER/"
-aws s3 cp products.html "s3://$BUCKET_NAME/$S3_FOLDER/"
-aws s3 cp about.html "s3://$BUCKET_NAME/$S3_FOLDER/"
+aws s3 cp dishes.html "s3://$BUCKET_NAME/$S3_FOLDER/"
 aws s3 cp contact.html "s3://$BUCKET_NAME/$S3_FOLDER/"
 
 # Upload CSS files
@@ -73,6 +80,10 @@ aws s3 cp --recursive css/ "s3://$BUCKET_NAME/$S3_FOLDER/css/"
 # Upload JavaScript files
 echo "Uploading JavaScript files..."
 aws s3 cp --recursive js/ "s3://$BUCKET_NAME/$S3_FOLDER/js/"
+
+# Upload images
+echo "Uploading images..."
+aws s3 cp --recursive images/ "s3://$BUCKET_NAME/$S3_FOLDER/images/"
 
 # Upload README
 echo "Uploading README..."
@@ -85,14 +96,14 @@ echo ""
 echo -e "${GREEN}🎉 Deployment completed successfully!${NC}"
 echo ""
 echo -e "${YELLOW}Your website is now available at:${NC}"
-echo -e "${GREEN}https://$BUCKET_NAME.s3.amazonaws.com/$S3_FOLDER/index.html${NC}"
+echo -e "${GREEN}http://$BUCKET_NAME.s3-website-$AWS_REGION.amazonaws.com/$S3_FOLDER/index.html${NC}"
 echo ""
 echo -e "${YELLOW}Direct page links:${NC}"
-echo -e "${BLUE}Homepage:${NC} https://$BUCKET_NAME.s3.amazonaws.com/$S3_FOLDER/index.html"
-echo -e "${BLUE}Products:${NC} https://$BUCKET_NAME.s3.amazonaws.com/$S3_FOLDER/products.html"
-echo -e "${BLUE}About:${NC} https://$BUCKET_NAME.s3.amazonaws.com/$S3_FOLDER/about.html"
-echo -e "${BLUE}Contact:${NC} https://$BUCKET_NAME.s3.amazonaws.com/$S3_FOLDER/contact.html"
+echo -e "${BLUE}Homepage:${NC} http://$BUCKET_NAME.s3-website-$AWS_REGION.amazonaws.com/$S3_FOLDER/index.html"
+echo -e "${BLUE}Dishes:${NC} http://$BUCKET_NAME.s3-website-$AWS_REGION.amazonaws.com/$S3_FOLDER/dishes.html"
+echo -e "${BLUE}Contact:${NC} http://$BUCKET_NAME.s3-website-$AWS_REGION.amazonaws.com/$S3_FOLDER/contact.html"
 echo ""
-echo -e "${YELLOW}Note:${NC} Make sure your S3 bucket has public read access enabled for these URLs to work."
+echo -e "${YELLOW}Note:${NC} Your S3 bucket is now configured for static website hosting."
+echo -e "${YELLOW}Website URL:${NC} http://$BUCKET_NAME.s3-website-$AWS_REGION.amazonaws.com/"
 echo ""
-echo -e "${GREEN}✨ Happy Baking! 🥖🥪🍰${NC}"
+echo -e "${GREEN}🌅 Happy Breakfast! 🍳☕🍜${NC}"
