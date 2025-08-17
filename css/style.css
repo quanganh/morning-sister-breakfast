@@ -115,6 +115,12 @@ p {
     font-weight: 300;
 }
 
+.logo-text span {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-weight: 300;
+}
+
 .nav-menu {
     display: flex;
     list-style: none;
@@ -171,7 +177,7 @@ p {
 /* Hero Section */
 .hero {
     min-height: 70vh;
-    padding: 120px 0 80px;
+    padding: 120px 0 60px;
     background: linear-gradient(135deg, var(--light-cream) 0%, var(--accent-cream) 100%);
     position: relative;
     overflow: hidden;
@@ -334,7 +340,7 @@ p {
 
 /* Featured Dishes */
 .featured-dishes {
-    padding: 80px 0;
+    padding: 60px 0;
     background: var(--white);
 }
 
@@ -481,8 +487,10 @@ p {
 }
 
 .culture-img {
-    width: 500px;
-    height: 350px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 4/3;
     border-radius: 20px;
     object-fit: cover;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
@@ -967,6 +975,16 @@ p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .culture-image {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .culture-img {
+        max-width: 350px;
+        width: 100%;
+    }
     .hamburger {
         display: flex;
     }
@@ -982,6 +1000,7 @@ p {
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         padding: 2rem 0;
+        z-index: 999;
     }
 
     .nav-menu.active {
@@ -992,10 +1011,29 @@ p {
         grid-template-columns: 1fr;
         text-align: center;
         gap: 2rem;
+        padding: 0 20px;
     }
 
-    .hero h1 {
+        .hero h1 {
         font-size: 2.5rem;
+        line-height: 1.1;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .logo-text h2 {
+        font-size: 1.4rem;
+    }
+
+    .logo-text span {
+        font-size: 0.8rem;
     }
 
     .hero-buttons {
@@ -1010,6 +1048,7 @@ p {
         grid-template-columns: 1fr;
         text-align: center;
         gap: 2rem;
+        padding: 0 20px;
     }
 
     .culture-features {
@@ -1040,12 +1079,32 @@ p {
         padding: 0 15px;
     }
 
+    .culture-img {
+        max-width: 320px;
+    }
+
+    .hero .container {
+        padding: 0 15px;
+    }
+
+    .vietnamese-culture .container {
+        padding: 0 15px;
+    }
+
     .hero h1 {
         font-size: 2rem;
     }
 
     .hero-content p {
         font-size: 1rem;
+    }
+
+    .logo-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .logo-text span {
+        font-size: 0.7rem;
     }
 
     .btn {

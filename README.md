@@ -92,10 +92,6 @@ php -S localhost:8000
 Cam An, Hoi An
 Quang Nam 51300, Vietnam
 
-### Opening Hours
-- **Monday - Friday**: 6:00 AM - 2:00 PM
-- **Saturday - Sunday**: 7:00 AM - 3:00 PM
-
 ### Contact Information
 - **Phone**: +84 93 579 64 61
 - **Mobile**: +84 93 579 64 61
