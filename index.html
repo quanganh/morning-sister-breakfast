@@ -39,7 +39,7 @@
             <div class="hero-content">
                 <h1>THE MORNING SISTER BREAKFAST</h1>
                 <p class="hero-subtitle">Authentic Vietnamese Morning Cuisine</p>
-                <p class="hero-description">Start your day with the rich, aromatic flavors of Vietnam. Our traditional breakfast dishes, prepared with love and authentic recipes, will transport you to the bustling streets of Hoi An City every morning.</p>
+                <p class="hero-description">Start your day with the rich, aromatic flavors of Vietnam. Our 5 signature breakfast dishes, prepared with love and authentic recipes, will transport you to the bustling streets of Hoi An City every morning.</p>
                 <div class="hero-buttons">
                     <a href="dishes.html" class="btn btn-primary">Explore Our Menu</a>
                     <a href="contact.html" class="btn btn-secondary">Visit Us Today</a>
@@ -79,18 +79,7 @@
             <div class="dishes-grid">
                 <div class="dish-card">
                     <div class="dish-image">
-                        <img src="images/bo-ne-img.jpg" alt="Bo Ne - Sizzling Beef" class="dish-img">
-                    </div>
-                    <h3>Bo Ne (Sizzling Beef)</h3>
-                    <p>Our most popular dish! Sizzling beef steak with eggs served in a hot skillet with fresh herbs, vegetables, and crispy baguette. The aroma and sound will wake up your senses perfectly.</p>
-                    <div class="dish-tags">
-                        <span class="tag">Popular</span>
-                        <span class="tag">Sizzling</span>
-                    </div>
-                </div>
-                <div class="dish-card">
-                    <div class="dish-image">
-                        <img src="images/pho-bo.jpg" alt="Pho Bo - Vietnamese Beef Noodle Soup" class="dish-img">
+                        <img src="images/1-pho-bo.jpg" alt="Pho Bo - Vietnamese Beef Noodle Soup" class="dish-img">
                     </div>
                     <h3>Pho Bo (Beef Pho)</h3>
                     <p>Our signature pho features rice noodles in aromatic beef broth with tender beef slices and fresh herbs. A comforting and traditional start to any Vietnamese morning.</p>
@@ -101,13 +90,24 @@
                 </div>
                 <div class="dish-card">
                     <div class="dish-image">
-                        <img src="images/banh-mi.jpg" alt="Banh Mi - Vietnamese Baguette Sandwich" class="dish-img">
+                        <img src="images/2-bo-ne.jpg" alt="Bo Ne - Sizzling Beef" class="dish-img">
                     </div>
-                    <h3>Banh Mi</h3>
-                    <p>Crispy Vietnamese baguette filled with grilled pork, fresh vegetables, cilantro, and our special sauce. This iconic Vietnamese sandwich is perfect for a quick, delicious breakfast on the go.</p>
+                    <h3>Bo Ne (Sizzling Beef)</h3>
+                    <p>Our most popular dish! Sizzling beef steak with eggs served in a hot skillet with fresh herbs, vegetables, and crispy baguette. The aroma and sound will wake up your senses perfectly.</p>
                     <div class="dish-tags">
-                        <span class="tag">Iconic</span>
-                        <span class="tag">Fresh</span>
+                        <span class="tag">Popular</span>
+                        <span class="tag">Sizzling</span>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-image">
+                        <img src="images/3-bo-kho.jpg" alt="Bo Kho - Vietnamese Braised Beef" class="dish-img">
+                    </div>
+                    <h3>Bo Kho (Braised Beef)</h3>
+                    <p>Tender braised beef in aromatic spices with carrots and potatoes, served with fresh herbs and rice. A hearty and flavorful Vietnamese breakfast that will keep you energized throughout the day.</p>
+                    <div class="dish-tags">
+                        <span class="tag">Hearty</span>
+                        <span class="tag">Aromatic</span>
                     </div>
                 </div>
             </div>
@@ -120,7 +120,7 @@
             <div class="culture-content">
                 <h2>Vietnamese Breakfast Culture</h2>
                 <p>In Vietnam, breakfast is more than just a meal—it's a celebration of community, tradition, and the start of a new day. Our morning cuisine reflects the country's rich culinary heritage, combining fresh local ingredients with time-honored cooking techniques.</p>
-                <p>From the bustling streets of Hoi An City to the peaceful countryside, Vietnamese breakfast brings people together over steaming bowls of pho, sizzling skillets of bo ne, and freshly baked banh mi.</p>
+                <p>From the bustling streets of Hoi An City to the peaceful countryside, Vietnamese breakfast brings people together over steaming bowls of pho, sizzling skillets of bo ne, hearty braised beef, and other traditional morning delights.</p>
                 <div class="culture-features">
                     <div class="culture-feature">
                         <i class="fas fa-sun"></i>
@@ -146,7 +146,7 @@
                 </div>
             </div>
             <div class="culture-image">
-                <img src="images/vietnamese-food-set-classic-dishes-cartoon-hand-drawn-illustration.jpg" alt="Traditional Vietnamese Morning Culture" class="culture-img">
+                <img src="images/ChatGPTImage17202511_08_22PM.png" alt="Traditional Vietnamese Morning Culture" class="culture-img">
             </div>
         </div>
     </section>
@@ -156,7 +156,7 @@
         <div class="container">
             <div class="cta-content">
                 <h2>Experience Vietnamese Breakfast Today</h2>
-                <p>Join us every morning to discover the authentic flavors of Vietnam. From traditional pho to sizzling bo ne, every dish tells a story of our rich culinary heritage.</p>
+                <p>Join us every morning to discover the authentic flavors of Vietnam. From traditional pho to sizzling bo ne and hearty braised beef, every dish tells a story of our rich culinary heritage.</p>
                 <div class="cta-buttons">
                     <a href="dishes.html" class="btn btn-outline">View Full Menu</a>
                     <a href="contact.html" class="btn btn-primary">Visit Us Now</a>
@@ -205,6 +205,18 @@
             </div>
         </div>
     </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="Dish Image" class="modal-image">
+            <div class="modal-caption">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>

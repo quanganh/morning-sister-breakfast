@@ -181,3 +181,55 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// Image Modal Functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDescription = document.getElementById('modalDescription');
+    const closeBtn = document.querySelector('.close');
+
+    // Function to open modal
+    function openModal(imageSrc, title, description) {
+        modalImg.src = imageSrc;
+        modalTitle.textContent = title;
+        modalDescription.textContent = description;
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden'; // Prevent scrolling
+    }
+
+    // Function to close modal
+    function closeModal() {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Restore scrolling
+    }
+
+    // Close modal when clicking the close button
+    closeBtn.addEventListener('click', closeModal);
+
+    // Close modal when clicking outside the modal content
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.style.display === 'block') {
+            closeModal();
+        }
+    });
+
+    // Add click event listeners to dish images on index page
+    const dishImages = document.querySelectorAll('.dish-img');
+    dishImages.forEach((img, index) => {
+        img.addEventListener('click', () => {
+            const dishCard = img.closest('.dish-card');
+            const title = dishCard.querySelector('h3').textContent;
+            const description = dishCard.querySelector('p').textContent;
+            openModal(img.src, title, description);
+        });
+    });
+});
