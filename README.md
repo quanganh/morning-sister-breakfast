@@ -109,7 +109,7 @@ Quang Nam 51300, Vietnam
 
 ## 🎯 Target Audience
 
-- **International Tourists** - Visitors to Ho Chi Minh City
+- **International Tourists** - Visitors to Hoi An City
 - **Expatriates** - Foreign residents in Vietnam
 - **Local Vietnamese** - Traditional breakfast lovers
 - **Business Professionals** - Morning meetings and networking
