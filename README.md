@@ -93,10 +93,10 @@ Cam An, Hoi An
 Quang Nam 51300, Vietnam
 
 ### Contact Information
-- **Phone**: +84 93 579 64 61
-- **Mobile**: +84 93 579 64 61
-- **Email**: info@themorningsister.com
-- **Catering**: catering@themorningsister.com
+- **Phone**: 039 366 7097
+- **Mobile**: 039 366 7097
+- **Email**: themorningsisterbreakfast@gmail.com
+- **Catering**: themorningsisterbreakfast@gmail.com
 
 ## 🌟 Special Services
 
@@ -139,8 +139,8 @@ This project is created for The Morning Sister Breakfast restaurant. All rights 
 ## 🤝 Support
 
 For technical support or questions about the website, please contact:
-- **Email**: info@themorningsister.com
-- **Phone**: +84 93 579 64 61
+- **Email**: themorningsisterbreakfast@gmail.com
+- **Phone**: 039 366 7097
 
 ---
 
