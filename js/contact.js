@@ -8,12 +8,9 @@ const EMAILJS_CONFIG = {
 
 // Initialize EmailJS when the page loads
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize EmailJS with your public key
-    console.log(EMAILJS_CONFIG.PUBLIC_KEY);
     emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY);
 });
 
-// FAQ Accordion Functionality
 document.addEventListener('DOMContentLoaded', () => {
     const faqItems = document.querySelectorAll('.faq-item');
 
@@ -193,7 +190,6 @@ function submitForm() {
     };
 
     // Send email using EmailJS
-    console.log(EMAILJS_CONFIG.SERVICE_ID);
     emailjs.send(EMAILJS_CONFIG.SERVICE_ID, EMAILJS_CONFIG.TEMPLATE_ID, {
         to_email: EMAILJS_CONFIG.TO_EMAIL,
         from_name: formData.name,
@@ -204,28 +200,22 @@ function submitForm() {
     })
     .then(function(response) {
         console.log("SUCCESS", response);
-        // Show success message
         showSuccessMessage();
-        // Reset form
         form.reset();
     })
     .catch(function(error) {
         console.log("FAILED", error);
-        // Show error message
         showErrorMessage();
     })
     .finally(function() {
-        // Reset button
         submitBtn.textContent = originalText;
         submitBtn.disabled = false;
     });
 }
 
-// Show success message
 function showSuccessMessage() {
     const form = document.getElementById('contact-form');
 
-    // Create success message
     const successMessage = document.createElement('div');
     successMessage.className = 'success-message';
     successMessage.innerHTML = `
@@ -233,10 +223,8 @@ function showSuccessMessage() {
         Thank you! Your message has been sent successfully. We'll get back to you soon.
     `;
 
-    // Insert success message after the form
     form.parentNode.appendChild(successMessage);
 
-    // Remove success message after 5 seconds
     setTimeout(() => {
         successMessage.remove();
     }, 5000);
