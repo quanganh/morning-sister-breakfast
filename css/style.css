@@ -852,6 +852,51 @@ p {
     border-color: #dc2626;
 }
 
+/* Success and Error Messages */
+.success-message,
+.error-message {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    animation: slideIn 0.3s ease-out;
+}
+
+.success-message {
+    background: #10b981;
+    color: white;
+    border: 1px solid #059669;
+}
+
+.error-message {
+    background: #dc2626;
+    color: white;
+    border: 1px solid #b91c1c;
+}
+
+.success-message i,
+.error-message i {
+    margin-right: 0.5rem;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Form submission button states */
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
 .map-placeholder {
     background: var(--white);
     padding: 2rem;
