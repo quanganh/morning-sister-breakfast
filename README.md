@@ -3,6 +3,7 @@
 A beautiful, responsive website showcasing authentic Vietnamese breakfast cuisine. This website is designed to attract foreigners and locals alike with its warm, inviting design and comprehensive information about Vietnamese breakfast culture.
 
 ## 🏠 Website Structure
+temporary file upload: https://clomo-mdm-backup.s3.ap-southeast-2.amazonaws.com/uploads/html/sites/breakfast/index.html
 
 ### Pages
 - **Home Page (`index.html`)** - Main landing page featuring hero section, featured dishes, and Vietnamese culture
@@ -96,6 +97,9 @@ Quang Nam 51300, Vietnam
 - **Phone**: 039 366 7097
 - **Mobile**: 039 366 7097
 - **Email**: themorningsisterbreakfast@gmail.com
+
+### QR Code
+![The Morning Sister Breakfast QR Code](images/qr_with_logo_clean.png)
 - **Catering**: themorningsisterbreakfast@gmail.com
 
 ## 🌟 Special Services
