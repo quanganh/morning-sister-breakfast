@@ -93,6 +93,13 @@ p {
     display: flex;
     align-items: center;
     gap: 1rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-logo:hover {
+    text-decoration: none;
+    color: inherit;
 }
 
 .logo-img {
@@ -103,16 +110,18 @@ p {
     border: 3px solid var(--primary-orange);
 }
 
-.logo-text h2 {
+.logo-text h1 {
     font-size: 1.8rem;
     color: var(--primary-orange);
     margin: 0;
+    line-height: 1.2;
 }
 
-.logo-text span {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    font-weight: 300;
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.1;
 }
 
 .logo-text span {
@@ -1073,7 +1082,7 @@ p {
         line-height: 1.6;
     }
 
-    .logo-text h2 {
+    .logo-text h1 {
         font-size: 1.4rem;
     }
 
@@ -1144,7 +1153,7 @@ p {
         font-size: 1rem;
     }
 
-    .logo-text h2 {
+    .logo-text h1 {
         font-size: 1.2rem;
     }
 

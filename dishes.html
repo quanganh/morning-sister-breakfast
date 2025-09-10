@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Dishes - The Morning Sister Breakfast</title>
     <meta name="description" content="Discover our authentic Vietnamese breakfast dishes, from traditional pho to sizzling bo ne. Experience the rich flavors of Vietnam every morning.">
+    <meta name="keywords" content="Vietnamese breakfast menu, pho bo, bo ne, bo kho, op la xiu mai, banh mi xiu mai, Vietnamese coffee, Hoi An breakfast menu, authentic Vietnamese dishes">
+    <meta name="author" content="The Morning Sister Breakfast">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://themorningsisterbreakfast.com.vn/dishes.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://themorningsisterbreakfast.com.vn/dishes.html">
+    <meta property="og:title" content="Our Dishes - The Morning Sister Breakfast">
+    <meta property="og:description" content="Discover our authentic Vietnamese breakfast dishes, from traditional pho to sizzling bo ne. Experience the rich flavors of Vietnam every morning.">
+    <meta property="og:image" content="https://themorningsisterbreakfast.com.vn/images/1-pho-bo.jpg">
+    <meta property="og:site_name" content="The Morning Sister Breakfast">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://themorningsisterbreakfast.com.vn/dishes.html">
+    <meta property="twitter:title" content="Our Dishes - The Morning Sister Breakfast">
+    <meta property="twitter:description" content="Discover our authentic Vietnamese breakfast dishes, from traditional pho to sizzling bo ne. Experience the rich flavors of Vietnam every morning.">
+    <meta property="twitter:image" content="https://themorningsisterbreakfast.com.vn/images/1-pho-bo.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/qr_with_logo_clean.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/qr_with_logo_clean.png">
+    <link rel="apple-touch-icon" href="images/qr_with_logo_clean.png">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="images/1-pho-bo.jpg" as="image">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+Pro:wght@300;400;600&display=swap" as="style">
+
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -13,13 +44,13 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
+            <a href="index.html" class="nav-logo">
                 <img src="images/525448254_122135428898737166_1749377385241477911_n.jpg" alt="The Morning Sister Breakfast Logo" class="logo-img">
                 <div class="logo-text">
-                    <h2>THE MORNING SISTER</h2>
+                    <h1>THE MORNING SISTER</h1>
                     <span>BREAKFAST</span>
                 </div>
-            </div>
+            </a>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="dishes.html" class="nav-link active">Our Dishes</a></li>
@@ -53,7 +84,7 @@
             <!-- Main Dishes Category -->
             <div class="category-content active" id="main-dishes">
                 <div class="dishes-grid">
-                    <div class="dish-card-large">
+                    <div class="dish-card-large" id="pho-bo">
                         <div class="dish-image-large">
                             <img src="images/1-pho-bo.jpg" alt="Pho Bo - Vietnamese Beef Noodle Soup" class="dish-img-large">
                         </div>
@@ -82,7 +113,7 @@
                         </div>
                     </div>
 
-                    <div class="dish-card-large">
+                    <div class="dish-card-large" id="bo-ne">
                         <div class="dish-image-large">
                             <img src="images/2-bo-ne.jpg" alt="Bo Ne - Sizzling Beef" class="dish-img-large">
                         </div>
@@ -111,7 +142,7 @@
                         </div>
                     </div>
 
-                    <div class="dish-card-large">
+                    <div class="dish-card-large" id="bo-kho">
                         <div class="dish-image-large">
                             <img src="images/3-bo-kho.jpg" alt="Bo Kho - Vietnamese Braised Beef" class="dish-img-large">
                         </div>
@@ -210,7 +241,7 @@
                 <div class="dishes-grid">
                     <div class="dish-card-large">
                         <div class="dish-image-large">
-                            <i class="fas fa-coffee"></i>
+                            <i class="fas fa-coffee" aria-label="Vietnamese Coffee Icon"></i>
                         </div>
                         <div class="dish-content">
                             <h3>Vietnamese Coffee</h3>
@@ -239,7 +270,7 @@
 
                     <div class="dish-card-large">
                         <div class="dish-image-large">
-                            <i class="fas fa-leaf"></i>
+                            <i class="fas fa-leaf" aria-label="Fresh Herbal Tea Icon"></i>
                         </div>
                         <div class="dish-content">
                             <h3>Fresh Herbal Tea</h3>
@@ -291,7 +322,7 @@
                 <div class="footer-section">
                     <div class="footer-logo">
                         <img src="images/525448254_122135428898737166_1749377385241477911_n.jpg" alt="The Morning Sister Breakfast Logo" class="footer-logo-img">
-                        <h3>THE MORNING SISTER</h3>
+                        <h4>THE MORNING SISTER</h4>
                         <p>Authentic Vietnamese Breakfast</p>
                     </div>
                     <div class="social-links">
@@ -336,6 +367,85 @@
             </div>
         </div>
     </div>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Menu",
+        "name": "The Morning Sister Breakfast Menu",
+        "description": "Complete menu of authentic Vietnamese breakfast dishes including pho bo, bo ne, bo kho, op la xiu mai, banh mi xiu mai, and beverages",
+        "url": "https://themorningsisterbreakfast.com.vn/dishes.html",
+        "provider": {
+            "@type": "Restaurant",
+            "name": "The Morning Sister Breakfast",
+            "url": "https://themorningsisterbreakfast.com.vn"
+        },
+        "hasMenuSection": [
+            {
+                "@type": "MenuSection",
+                "name": "Main Dishes",
+                "description": "Traditional Vietnamese breakfast main dishes",
+                "hasMenuItem": [
+                    {
+                        "@type": "MenuItem",
+                        "name": "Pho Bo (Beef Pho)",
+                        "description": "Rice noodles in aromatic beef broth with tender beef slices and fresh herbs",
+                        "image": "https://themorningsisterbreakfast.com.vn/images/1-pho-bo.jpg"
+                    },
+                    {
+                        "@type": "MenuItem",
+                        "name": "Bo Ne (Sizzling Beef)",
+                        "description": "Sizzling beef steak with eggs served in a hot skillet with fresh herbs and crispy baguette",
+                        "image": "https://themorningsisterbreakfast.com.vn/images/2-bo-ne.jpg"
+                    },
+                    {
+                        "@type": "MenuItem",
+                        "name": "Bo Kho (Braised Beef)",
+                        "description": "Tender braised beef in aromatic spices with carrots and potatoes, served with fresh herbs and rice",
+                        "image": "https://themorningsisterbreakfast.com.vn/images/3-bo-kho.jpg"
+                    }
+                ]
+            },
+            {
+                "@type": "MenuSection",
+                "name": "Specialties",
+                "description": "Unique Vietnamese breakfast specialties",
+                "hasMenuItem": [
+                    {
+                        "@type": "MenuItem",
+                        "name": "Op La Xiu Mai (Omelette with Meatballs)",
+                        "description": "Vietnamese omelette filled with savory meatballs, fresh herbs, and vegetables",
+                        "image": "https://themorningsisterbreakfast.com.vn/images/4-op-la-xiu-mai.jpg"
+                    },
+                    {
+                        "@type": "MenuItem",
+                        "name": "Banh Mi Xiu Mai (Baguette with Meatballs)",
+                        "description": "Crispy Vietnamese baguette filled with flavorful meatballs, fresh vegetables, cilantro, and special sauce",
+                        "image": "https://themorningsisterbreakfast.com.vn/images/5-banh-mi-xiu-mai.jpg"
+                    }
+                ]
+            },
+            {
+                "@type": "MenuSection",
+                "name": "Beverages",
+                "description": "Traditional Vietnamese beverages",
+                "hasMenuItem": [
+                    {
+                        "@type": "MenuItem",
+                        "name": "Vietnamese Coffee",
+                        "description": "Strong Vietnamese coffee served with sweetened condensed milk, served hot or iced"
+                    },
+                    {
+                        "@type": "MenuItem",
+                        "name": "Fresh Herbal Tea",
+                        "description": "Refreshing herbal tea made with fresh local herbs and flowers"
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
 
     <script src="js/script.js"></script>
     <script src="js/dishes.js"></script>

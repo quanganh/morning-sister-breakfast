@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - The Morning Sister Breakfast</title>
     <meta name="description" content="Get in touch with The Morning Sister Breakfast. Visit us for authentic Vietnamese breakfast, catering services, and special events in Hoi An, Quang Nam.">
+    <meta name="keywords" content="Vietnamese breakfast contact, Hoi An restaurant contact, Vietnamese catering, breakfast reservation Hoi An, Vietnamese food delivery, cooking classes Hoi An">
+    <meta name="author" content="The Morning Sister Breakfast">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://themorningsisterbreakfast.com.vn/contact.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://themorningsisterbreakfast.com.vn/contact.html">
+    <meta property="og:title" content="Contact Us - The Morning Sister Breakfast">
+    <meta property="og:description" content="Get in touch with The Morning Sister Breakfast. Visit us for authentic Vietnamese breakfast, catering services, and special events in Hoi An, Quang Nam.">
+    <meta property="og:image" content="https://themorningsisterbreakfast.com.vn/images/525448254_122135428898737166_1749377385241477911_n.jpg">
+    <meta property="og:site_name" content="The Morning Sister Breakfast">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://themorningsisterbreakfast.com.vn/contact.html">
+    <meta property="twitter:title" content="Contact Us - The Morning Sister Breakfast">
+    <meta property="twitter:description" content="Get in touch with The Morning Sister Breakfast. Visit us for authentic Vietnamese breakfast, catering services, and special events in Hoi An, Quang Nam.">
+    <meta property="twitter:image" content="https://themorningsisterbreakfast.com.vn/images/525448254_122135428898737166_1749377385241477911_n.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/qr_with_logo_clean.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/qr_with_logo_clean.png">
+    <link rel="apple-touch-icon" href="images/qr_with_logo_clean.png">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="images/525448254_122135428898737166_1749377385241477911_n.jpg" as="image">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+Pro:wght@300;400;600&display=swap" as="style">
+
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -14,13 +45,13 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
+            <a href="index.html" class="nav-logo">
                 <img src="images/525448254_122135428898737166_1749377385241477911_n.jpg" alt="The Morning Sister Breakfast Logo" class="logo-img">
                 <div class="logo-text">
-                    <h2>THE MORNING SISTER</h2>
+                    <h1>THE MORNING SISTER</h1>
                     <span>BREAKFAST</span>
                 </div>
-            </div>
+            </a>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="dishes.html" class="nav-link">Our Dishes</a></li>
@@ -119,7 +150,7 @@
                 <div class="map-container">
                     <h2>Find Us</h2>
                     <div class="map-placeholder">
-                        <i class="fas fa-map"></i>
+                        <i class="fas fa-map" aria-label="Map Location Icon"></i>
                         <span>Interactive Map Coming Soon</span>
                         <p>We're located in the beautiful Cam An area of Hoi An, just a short distance from the ancient town and beautiful beaches.</p>
                     </div>
@@ -262,7 +293,7 @@
                 <div class="footer-section">
                     <div class="footer-logo">
                         <img src="images/525448254_122135428898737166_1749377385241477911_n.jpg" alt="The Morning Sister Breakfast Logo" class="footer-logo-img">
-                        <h3>THE MORNING SISTER</h3>
+                        <h4>THE MORNING SISTER</h4>
                         <p>Authentic Vietnamese Breakfast</p>
                     </div>
                     <div class="social-links">
@@ -295,6 +326,52 @@
             </div>
         </div>
     </footer>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact The Morning Sister Breakfast",
+        "description": "Contact information and location details for The Morning Sister Breakfast restaurant in Hoi An, Vietnam",
+        "url": "https://themorningsisterbreakfast.com.vn/contact.html",
+        "mainEntity": {
+            "@type": "Restaurant",
+            "name": "The Morning Sister Breakfast",
+            "description": "Authentic Vietnamese breakfast restaurant in Hoi An, Vietnam",
+            "url": "https://themorningsisterbreakfast.com.vn",
+            "telephone": "+84 39 366 70 97",
+            "email": "themorningsisterbreakfast@gmail.com",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "111 Nguyen Phan Vinh",
+                "addressLocality": "Cam An, Hoi An",
+                "addressRegion": "Quang Nam",
+                "postalCode": "51300",
+                "addressCountry": "VN"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "15.8801",
+                "longitude": "108.3380"
+            },
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                    "opens": "08:00",
+                    "closes": "17:00"
+                }
+            ],
+            "servesCuisine": "Vietnamese",
+            "priceRange": "$$",
+            "image": "https://themorningsisterbreakfast.com.vn/images/525448254_122135428898737166_1749377385241477911_n.jpg",
+            "sameAs": [
+                "https://www.facebook.com/profile.php?id=61578834246113"
+            ]
+        }
+    }
+    </script>
 
     <script src="js/script.js"></script>
     <script src="js/contact.js"></script>
