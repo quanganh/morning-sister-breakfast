@@ -84,9 +84,9 @@ p {
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 80px;
+    gap: 2rem;
 }
 
 .nav-logo {
@@ -95,6 +95,7 @@ p {
     gap: 1rem;
     text-decoration: none;
     color: inherit;
+    margin-right: auto;
 }
 
 .nav-logo:hover {
@@ -1079,6 +1080,77 @@ p {
 }
 
 /* Responsive Design */
+/* Tablet breakpoint for iPad Air and similar devices */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .nav-container {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .nav-menu {
+        gap: 1rem;
+    }
+
+    .nav-link {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .language-switcher {
+        margin: 0 0 0 0.25rem;
+    }
+
+    .lang-btn {
+        padding: 2px 4px;
+        font-size: 0.7rem;
+        min-width: 32px;
+    }
+
+    .lang-btn .flag {
+        font-size: 0.7rem;
+        width: 12px;
+        height: 12px;
+    }
+
+    .lang-btn .lang-text {
+        font-size: 0.6rem;
+    }
+
+    /* Hero section adjustments for tablet */
+    .hero .container {
+        gap: 3rem;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .hero-description {
+        font-size: 1.05rem;
+    }
+
+    /* Button adjustments for tablet */
+    .btn {
+        padding: 12px 24px;
+        font-size: 0.95rem;
+    }
+
+    /* Logo adjustments for tablet */
+    .logo-text h1 {
+        font-size: 1.6rem;
+    }
+
+    .logo-text span {
+        font-size: 0.85rem;
+    }
+}
+
 @media (max-width: 768px) {
     .culture-image {
         display: flex;
@@ -1105,7 +1177,7 @@ p {
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         padding: 2rem 0;
-        order: 2;
+        order: 3;
         z-index: 999;
     }
 
@@ -1361,27 +1433,27 @@ p {
 .language-switcher {
     display: flex;
     align-items: center;
-    margin: 0 15px;
+    margin: 0 0 0 0.5rem;
     order: 3; /* Position after navigation menu on web */
 }
 
 .lang-btn {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    padding: 6px 12px;
+    gap: 0.3rem;
+    padding: 4px 8px;
     background: rgba(255, 255, 255, 0.9);
     border: 1px solid rgba(217, 119, 6, 0.3);
-    border-radius: 20px;
+    border-radius: 15px;
     color: var(--primary-orange);
     cursor: pointer;
     font-weight: 500;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     transition: all 0.3s ease;
     text-decoration: none;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
-    min-width: 60px;
+    min-width: 45px;
     justify-content: center;
 }
 
@@ -1401,10 +1473,10 @@ p {
 }
 
 .lang-btn .flag {
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1;
-    width: 18px;
-    height: 18px;
+    width: 14px;
+    height: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1416,9 +1488,9 @@ p {
 }
 
 .lang-btn .lang-text {
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     font-weight: 600;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.2px;
 }
 
 /* Mobile responsive for language switcher */
