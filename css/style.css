@@ -589,6 +589,17 @@ p {
     margin-bottom: 0.5rem;
 }
 
+.footer-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: var(--primary-orange);
+    text-decoration: underline;
+}
+
 .footer-section ul {
     list-style: none;
 }
