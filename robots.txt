@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://themorningsisterbreakfast.com.vn/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow certain file types
+Disallow: /*.css$
+Disallow: /*.js$
+Disallow: /*.json$
+Disallow: /*.md$
+Disallow: /*.sh$
+
+# Allow important directories
+Allow: /images/
+Allow: /css/
+Allow: /js/

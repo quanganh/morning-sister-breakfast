@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Morning Sister Breakfast - Authentic Vietnamese Breakfast</title>
     <meta name="description" content="Experience authentic Vietnamese breakfast at The Morning Sister. From traditional pho to sizzling bo ne, discover the rich flavors of Vietnam every morning.">
+    <meta name="keywords" content="Vietnamese breakfast, pho bo, bo ne, bo kho, Hoi An breakfast, authentic Vietnamese food, Vietnamese restaurant, breakfast Hoi An, Vietnamese cuisine, traditional breakfast">
+    <meta name="author" content="The Morning Sister Breakfast">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://themorningsisterbreakfast.com.vn/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://themorningsisterbreakfast.com.vn/">
+    <meta property="og:title" content="The Morning Sister Breakfast - Authentic Vietnamese Breakfast">
+    <meta property="og:description" content="Experience authentic Vietnamese breakfast at The Morning Sister. From traditional pho to sizzling bo ne, discover the rich flavors of Vietnam every morning.">
+    <meta property="og:image" content="https://themorningsisterbreakfast.com.vn/images/525513652_122135429192737166_4425569238321601520_n.jpg">
+    <meta property="og:site_name" content="The Morning Sister Breakfast">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://themorningsisterbreakfast.com.vn/">
+    <meta property="twitter:title" content="The Morning Sister Breakfast - Authentic Vietnamese Breakfast">
+    <meta property="twitter:description" content="Experience authentic Vietnamese breakfast at The Morning Sister. From traditional pho to sizzling bo ne, discover the rich flavors of Vietnam every morning.">
+    <meta property="twitter:image" content="https://themorningsisterbreakfast.com.vn/images/525513652_122135429192737166_4425569238321601520_n.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/qr_with_logo_clean.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/qr_with_logo_clean.png">
+    <link rel="apple-touch-icon" href="images/qr_with_logo_clean.png">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="images/525513652_122135429192737166_4425569238321601520_n.jpg" as="image">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+Pro:wght@300;400;600&display=swap" as="style">
+
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -13,13 +44,13 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
+            <a href="index.html" class="nav-logo">
                 <img src="images/525448254_122135428898737166_1749377385241477911_n.jpg" alt="The Morning Sister Breakfast Logo" class="logo-img">
                 <div class="logo-text">
-                    <h2>THE MORNING SISTER</h2>
+                    <h1>THE MORNING SISTER</h1>
                     <span>BREAKFAST</span>
                 </div>
-            </div>
+            </a>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link active">Home</a></li>
                 <li><a href="dishes.html" class="nav-link">Our Dishes</a></li>
@@ -37,7 +68,7 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>THE MORNING SISTER BREAKFAST</h1>
+                <h2>THE MORNING SISTER BREAKFAST</h2>
                 <p class="hero-subtitle">Authentic Vietnamese Morning Cuisine</p>
                 <p class="hero-description">Start your day with the rich, aromatic flavors of Vietnam. Our 5 signature breakfast dishes, prepared with love and authentic recipes, will transport you to the bustling streets of Hoi An City every morning.</p>
                 <div class="hero-buttons">
@@ -120,7 +151,7 @@
             <div class="culture-content">
                 <h2>Vietnamese Breakfast Culture</h2>
                 <p>In Vietnam, breakfast is more than just a meal—it's a celebration of community, tradition, and the start of a new day. Our morning cuisine reflects the country's rich culinary heritage, combining fresh local ingredients with time-honored cooking techniques.</p>
-                <p>From the bustling streets of Hoi An City to the peaceful countryside, Vietnamese breakfast brings people together over steaming bowls of pho, sizzling skillets of bo ne, hearty braised beef, and other traditional morning delights.</p>
+                <p>From the bustling streets of <a href="contact.html">Hoi An City</a> to the peaceful countryside, Vietnamese breakfast brings people together over steaming bowls of <a href="dishes.html#pho-bo">pho</a>, sizzling skillets of <a href="dishes.html#bo-ne">bo ne</a>, hearty <a href="dishes.html#bo-kho">braised beef</a>, and other traditional morning delights.</p>
                 <div class="culture-features">
                     <div class="culture-feature">
                         <i class="fas fa-sun"></i>
@@ -172,7 +203,7 @@
                 <div class="footer-section">
                     <div class="footer-logo">
                         <img src="images/525448254_122135428898737166_1749377385241477911_n.jpg" alt="The Morning Sister Breakfast Logo" class="footer-logo-img">
-                        <h3>THE MORNING SISTER</h3>
+                        <h4>THE MORNING SISTER</h4>
                         <p>Authentic Vietnamese Breakfast</p>
                     </div>
                     <div class="social-links">
@@ -217,6 +248,68 @@
             </div>
         </div>
     </div>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "The Morning Sister Breakfast",
+        "description": "Authentic Vietnamese breakfast restaurant in Hoi An, Vietnam. Specializing in traditional Vietnamese morning dishes including pho bo, bo ne, bo kho, and more.",
+        "url": "https://themorningsisterbreakfast.com.vn",
+        "telephone": "+84 39 366 70 97",
+        "email": "themorningsisterbreakfast@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "111 Nguyen Phan Vinh",
+            "addressLocality": "Cam An, Hoi An",
+            "addressRegion": "Quang Nam",
+            "postalCode": "51300",
+            "addressCountry": "VN"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "15.8801",
+            "longitude": "108.3380"
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                "opens": "08:00",
+                "closes": "17:00"
+            }
+        ],
+        "servesCuisine": "Vietnamese",
+        "priceRange": "$$",
+        "image": "https://themorningsisterbreakfast.com.vn/images/525513652_122135429192737166_4425569238321601520_n.jpg",
+        "logo": "https://themorningsisterbreakfast.com.vn/images/525448254_122135428898737166_1749377385241477911_n.jpg",
+        "sameAs": [
+            "https://www.facebook.com/profile.php?id=61578834246113"
+        ],
+        "hasMenu": "https://themorningsisterbreakfast.com.vn/dishes.html",
+        "menu": [
+            {
+                "@type": "MenuItem",
+                "name": "Pho Bo (Beef Pho)",
+                "description": "Rice noodles in aromatic beef broth with tender beef slices and fresh herbs",
+                "image": "https://themorningsisterbreakfast.com.vn/images/1-pho-bo.jpg"
+            },
+            {
+                "@type": "MenuItem",
+                "name": "Bo Ne (Sizzling Beef)",
+                "description": "Sizzling beef steak with eggs served in a hot skillet with fresh herbs and crispy baguette",
+                "image": "https://themorningsisterbreakfast.com.vn/images/2-bo-ne.jpg"
+            },
+            {
+                "@type": "MenuItem",
+                "name": "Bo Kho (Braised Beef)",
+                "description": "Tender braised beef in aromatic spices with carrots and potatoes, served with fresh herbs and rice",
+                "image": "https://themorningsisterbreakfast.com.vn/images/3-bo-kho.jpg"
+            }
+        ]
+    }
+    </script>
 
     <script src="js/script.js"></script>
 </body>
