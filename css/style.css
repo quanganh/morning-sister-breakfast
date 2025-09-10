@@ -552,7 +552,7 @@ p {
 
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr 0.8fr 1.2fr 0.8fr;
     gap: 2rem;
     margin-bottom: 2rem;
 }
@@ -1247,6 +1247,11 @@ p {
         gap: 2rem;
     }
 
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
     .dish-details {
         grid-template-columns: 1fr;
     }
@@ -1630,6 +1635,14 @@ p {
 
     .nav-container .language-switcher .lang-btn.active {
         transform: translateY(-1px) !important;
+    }
+}
+
+/* Tablet breakpoint for footer layout */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .footer-content {
+        grid-template-columns: 1fr 0.9fr 1.1fr 0.9fr;
+        gap: 1.5rem;
     }
 }
 
