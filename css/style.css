@@ -133,7 +133,8 @@ p {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 1.5rem;
+    order: 2;
 }
 
 .nav-link {
@@ -173,6 +174,7 @@ p {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    order: 3; /* Position after language switcher on mobile */
 }
 
 .bar {
@@ -1103,6 +1105,7 @@ p {
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         padding: 2rem 0;
+        order: 2;
         z-index: 999;
     }
 
@@ -1351,6 +1354,210 @@ p {
 
     .modal-image {
         max-height: 250px;
+    }
+}
+
+/* Language Switcher Styles */
+.language-switcher {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+    order: 3; /* Position after navigation menu on web */
+}
+
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 6px 12px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(217, 119, 6, 0.3);
+    border-radius: 20px;
+    color: var(--primary-orange);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    min-width: 60px;
+    justify-content: center;
+}
+
+.lang-btn:hover {
+    background: var(--primary-orange);
+    color: var(--white);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(217, 119, 6, 0.25);
+    border-color: var(--primary-orange);
+}
+
+.lang-btn.active {
+    background: var(--primary-orange);
+    color: var(--white);
+    box-shadow: 0 4px 15px rgba(217, 119, 6, 0.25);
+    border-color: var(--primary-orange);
+}
+
+.lang-btn .flag {
+    font-size: 1rem;
+    line-height: 1;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.lang-btn.active .flag {
+    transform: scale(1.05);
+}
+
+.lang-btn .lang-text {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+/* Mobile responsive for language switcher */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+    }
+
+    .nav-container .language-switcher {
+        order: 2 !important; /* Position before hamburger menu (order 3) */
+        width: auto !important;
+        height: auto !important;
+        margin-top: 0 !important;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+        justify-content: center !important;
+        position: relative !important;
+        background: transparent !important;
+        border: none !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        flex-direction: row !important;
+        gap: 0 !important;
+    }
+
+    .nav-container .language-switcher .lang-btn {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        width: auto !important;
+        height: 24px !important;
+        padding: 3px 6px !important;
+        border: 1px solid rgba(217, 119, 6, 0.3) !important;
+        border-radius: 12px !important;
+        background: rgba(255, 255, 255, 0.95) !important;
+        color: var(--primary-orange) !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        transition: all 0.3s ease !important;
+        z-index: 2 !important;
+        cursor: pointer !important;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1) !important;
+        backdrop-filter: blur(10px) !important;
+        min-width: 40px !important;
+    }
+
+    .nav-container .language-switcher .lang-btn:not(.active) {
+        background: rgba(255, 255, 255, 0.8) !important;
+        color: var(--primary-orange) !important;
+        opacity: 0.8 !important;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    .nav-container .language-switcher .lang-btn[data-lang="vn"] {
+        left: auto !important;
+    }
+
+    .nav-container .language-switcher .lang-btn .flag {
+        font-size: 0.7rem !important;
+        margin: 0 !important;
+        transition: all 0.3s ease !important;
+        width: 12px !important;
+        height: 12px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .nav-container .language-switcher .lang-btn .lang-text {
+        display: block !important;
+        font-size: 0.6rem !important;
+        font-weight: 600 !important;
+        letter-spacing: 0.2px !important;
+        margin-left: 3px !important;
+    }
+
+    .nav-container .language-switcher .lang-btn:hover {
+        transform: translateY(-1px) !important;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15) !important;
+        opacity: 1 !important;
+    }
+
+    .nav-container .language-switcher .lang-btn.active {
+        background: var(--primary-orange) !important;
+        color: var(--white) !important;
+        box-shadow: 0 3px 10px rgba(217, 119, 6, 0.3) !important;
+        opacity: 1 !important;
+        transform: translateY(-1px) !important;
+    }
+
+    .nav-container .language-switcher .lang-btn.active .flag {
+        transform: scale(1.05) !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-container {
+        padding: 0 10px;
+    }
+
+    .nav-container .language-switcher {
+        width: auto !important;
+        height: auto !important;
+        gap: 0 !important;
+        margin-left: 8px !important;
+        margin-right: 8px !important;
+        order: 2 !important; /* Position before hamburger menu */
+    }
+
+    .nav-container .language-switcher .lang-btn {
+        width: auto !important;
+        height: 22px !important;
+        padding: 2px 5px !important;
+        min-width: 35px !important;
+    }
+
+    .nav-container .language-switcher .lang-btn[data-lang="vn"] {
+        left: auto !important;
+    }
+
+    .nav-container .language-switcher .lang-btn .flag {
+        font-size: 0.6rem !important;
+        width: 10px !important;
+        height: 10px !important;
+    }
+
+    .nav-container .language-switcher .lang-btn .lang-text {
+        font-size: 0.55rem !important;
+        margin-left: 2px !important;
+    }
+
+    .nav-container .language-switcher .lang-btn.active {
+        transform: translateY(-1px) !important;
     }
 }
 

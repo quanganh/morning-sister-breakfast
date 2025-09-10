@@ -52,9 +52,9 @@
                 </div>
             </a>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="dishes.html" class="nav-link active">Our Dishes</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="index.html" class="nav-link" data-translate="nav-home">Home</a></li>
+                <li><a href="dishes.html" class="nav-link active" data-translate="nav-dishes">Our Dishes</a></li>
+                <li><a href="contact.html" class="nav-link" data-translate="nav-contact">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -67,8 +67,8 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1>Our Signature Dishes</h1>
-            <p>Experience the authentic taste of Vietnam with our signature morning dishes</p>
+            <h1 data-translate="dishes-page-title">Our Signature Dishes</h1>
+            <p data-translate="dishes-page-subtitle">Experience the authentic taste of Vietnam with our signature morning dishes</p>
         </div>
     </section>
 
@@ -76,9 +76,9 @@
     <section class="dish-categories">
         <div class="container">
             <div class="category-tabs">
-                <button class="tab-btn active" data-category="main-dishes">Main Dishes</button>
-                <button class="tab-btn" data-category="specialties">Specialties</button>
-                <button class="tab-btn" data-category="beverages">Beverages</button>
+                <button class="tab-btn active" data-category="main-dishes" data-translate="tab-main-dishes">Main Dishes</button>
+                <button class="tab-btn" data-category="specialties" data-translate="tab-specialties">Specialties</button>
+                <button class="tab-btn" data-category="beverages" data-translate="tab-beverages">Beverages</button>
             </div>
 
             <!-- Main Dishes Category -->
@@ -89,26 +89,26 @@
                             <img src="images/1-pho-bo.jpg" alt="Pho Bo - Vietnamese Beef Noodle Soup" class="dish-img-large">
                         </div>
                         <div class="dish-content">
-                            <h3>Pho Bo (Beef Pho)</h3>
-                            <p class="dish-description">Our signature pho is made with ancient Vietnamese techniques, using rice noodles, aromatic beef broth, tender beef slices, and fresh herbs. Each bowl is prepared with care, resulting in a comforting and flavorful morning meal that warms the soul.</p>
+                            <h3 data-translate="pho-bo-title">Pho Bo (Beef Pho)</h3>
+                            <p class="dish-description" data-translate="pho-bo-detail-desc">Our signature pho is made with ancient Vietnamese techniques, using rice noodles, aromatic beef broth, tender beef slices, and fresh herbs. Each bowl is prepared with care, resulting in a comforting and flavorful morning meal that warms the soul.</p>
                             <div class="dish-details">
                                 <div class="detail-item">
                                     <i class="fas fa-clock"></i>
-                                    <span>Fresh daily at 8:00 AM</span>
+                                    <span data-translate="pho-bo-fresh-daily">Fresh daily at 8:00 AM</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-leaf"></i>
-                                    <span>Fresh herbs & vegetables</span>
+                                    <span data-translate="pho-bo-herbs">Fresh herbs & vegetables</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-fire"></i>
-                                    <span>Slow-cooked broth</span>
+                                    <span data-translate="pho-bo-slow-cooked">Slow-cooked broth</span>
                                 </div>
                             </div>
                             <div class="dish-tags">
-                                <span class="tag">Traditional</span>
-                                <span class="tag">Fresh</span>
-                                <span class="tag">Comforting</span>
+                                <span class="tag" data-translate="tag-traditional">Traditional</span>
+                                <span class="tag" data-translate="tag-fresh">Fresh</span>
+                                <span class="tag" data-translate="pho-bo-tag-comforting">Comforting</span>
                             </div>
                         </div>
                     </div>
@@ -118,26 +118,26 @@
                             <img src="images/2-bo-ne.jpg" alt="Bo Ne - Sizzling Beef" class="dish-img-large">
                         </div>
                         <div class="dish-content">
-                            <h3>Bo Ne (Sizzling Beef)</h3>
-                            <p class="dish-description">Our most popular dish! Sizzling beef steak with eggs, served in a hot skillet with fresh herbs, vegetables, and a crispy baguette. The sizzling sound and aroma will wake up your senses and start your morning perfectly.</p>
+                            <h3 data-translate="bo-ne-title">Bo Ne (Sizzling Beef)</h3>
+                            <p class="dish-description" data-translate="bo-ne-detail-desc">Our most popular dish! Sizzling beef steak with eggs, served in a hot skillet with fresh herbs, vegetables, and a crispy baguette. The sizzling sound and aroma will wake up your senses and start your morning perfectly.</p>
                             <div class="dish-details">
                                 <div class="detail-item">
                                     <i class="fas fa-clock"></i>
-                                    <span>Weekend special</span>
+                                    <span data-translate="bo-ne-weekend-special">Weekend special</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-leaf"></i>
-                                    <span>Premium beef cuts</span>
+                                    <span data-translate="bo-ne-premium-beef">Premium beef cuts</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-star"></i>
-                                    <span>Chef's recommendation</span>
+                                    <span data-translate="bo-ne-chef-recommendation">Chef's recommendation</span>
                                 </div>
                             </div>
                             <div class="dish-tags">
-                                <span class="tag">Popular</span>
-                                <span class="tag">Sizzling</span>
-                                <span class="tag">Premium</span>
+                                <span class="tag" data-translate="tag-popular">Popular</span>
+                                <span class="tag" data-translate="tag-sizzling">Sizzling</span>
+                                <span class="tag" data-translate="bo-ne-tag-premium">Premium</span>
                             </div>
                         </div>
                     </div>
@@ -147,26 +147,26 @@
                             <img src="images/3-bo-kho.jpg" alt="Bo Kho - Vietnamese Braised Beef" class="dish-img-large">
                         </div>
                         <div class="dish-content">
-                            <h3>Bo Kho (Braised Beef)</h3>
-                            <p class="dish-description">Tender braised beef in aromatic spices with carrots and potatoes, served with fresh herbs and rice. This hearty dish represents the rich flavors of Vietnamese home cooking, perfect for a satisfying breakfast.</p>
+                            <h3 data-translate="bo-kho-title">Bo Kho (Braised Beef)</h3>
+                            <p class="dish-description" data-translate="bo-kho-detail-desc">Tender braised beef in aromatic spices with carrots and potatoes, served with fresh herbs and rice. This hearty dish represents the rich flavors of Vietnamese home cooking, perfect for a satisfying breakfast.</p>
                             <div class="dish-details">
                                 <div class="detail-item">
                                     <i class="fas fa-clock"></i>
-                                    <span>Slow-cooked daily</span>
+                                    <span data-translate="bo-kho-slow-cooked-daily">Slow-cooked daily</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-leaf"></i>
-                                    <span>Fresh local vegetables</span>
+                                    <span data-translate="bo-kho-local-vegetables">Fresh local vegetables</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-star"></i>
-                                    <span>Traditional recipe</span>
+                                    <span data-translate="bo-kho-traditional-recipe">Traditional recipe</span>
                                 </div>
                             </div>
                             <div class="dish-tags">
-                                <span class="tag">Hearty</span>
-                                <span class="tag">Aromatic</span>
-                                <span class="tag">Traditional</span>
+                                <span class="tag" data-translate="tag-hearty">Hearty</span>
+                                <span class="tag" data-translate="tag-aromatic">Aromatic</span>
+                                <span class="tag" data-translate="bo-kho-tag-traditional">Traditional</span>
                             </div>
                         </div>
                     </div>
@@ -181,26 +181,26 @@
                             <img src="images/4-op-la-xiu-mai.jpg" alt="Op La Xiu Mai - Vietnamese Omelette with Meatballs" class="dish-img-large">
                         </div>
                         <div class="dish-content">
-                            <h3>Op La Xiu Mai (Omelette with Meatballs)</h3>
-                            <p class="dish-description">A delightful Vietnamese omelette filled with savory meatballs, fresh herbs, and vegetables. This dish combines the comfort of eggs with the rich flavors of Vietnamese meatballs, creating a perfect breakfast experience.</p>
+                            <h3 data-translate="op-la-title">Op La Xiu Mai (Omelette with Meatballs)</h3>
+                            <p class="dish-description" data-translate="op-la-desc">A delightful Vietnamese omelette filled with savory meatballs, fresh herbs, and vegetables. This dish combines the comfort of eggs with the rich flavors of Vietnamese meatballs, creating a perfect breakfast experience.</p>
                             <div class="dish-details">
                                 <div class="detail-item">
                                     <i class="fas fa-clock"></i>
-                                    <span>Made to order</span>
+                                    <span data-translate="op-la-made-to-order">Made to order</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-leaf"></i>
-                                    <span>Fresh herbs & vegetables</span>
+                                    <span data-translate="op-la-fresh-herbs">Fresh herbs & vegetables</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-star"></i>
-                                    <span>Unique combination</span>
+                                    <span data-translate="op-la-unique-combination">Unique combination</span>
                                 </div>
                             </div>
                             <div class="dish-tags">
-                                <span class="tag">Unique</span>
-                                <span class="tag">Savory</span>
-                                <span class="tag">Fresh</span>
+                                <span class="tag" data-translate="op-la-tag-unique">Unique</span>
+                                <span class="tag" data-translate="op-la-tag-savory">Savory</span>
+                                <span class="tag" data-translate="tag-fresh">Fresh</span>
                             </div>
                         </div>
                     </div>
@@ -210,26 +210,26 @@
                             <img src="images/5-banh-mi-xiu-mai.jpg" alt="Banh Mi Xiu Mai - Vietnamese Baguette with Meatballs" class="dish-img-large">
                         </div>
                         <div class="dish-content">
-                            <h3>Banh Mi Xiu Mai (Baguette with Meatballs)</h3>
-                            <p class="dish-description">Crispy Vietnamese baguette filled with flavorful meatballs, fresh vegetables, cilantro, and our special sauce. This twist on the classic banh mi offers a unique and satisfying breakfast option.</p>
+                            <h3 data-translate="banh-mi-title">Banh Mi Xiu Mai (Baguette with Meatballs)</h3>
+                            <p class="dish-description" data-translate="banh-mi-desc">Crispy Vietnamese baguette filled with flavorful meatballs, fresh vegetables, cilantro, and our special sauce. This twist on the classic banh mi offers a unique and satisfying breakfast option.</p>
                             <div class="dish-details">
                                 <div class="detail-item">
                                     <i class="fas fa-clock"></i>
-                                    <span>Available all day</span>
+                                    <span data-translate="banh-mi-available-all-day">Available all day</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-leaf"></i>
-                                    <span>Fresh vegetables</span>
+                                    <span data-translate="banh-mi-fresh-vegetables">Fresh vegetables</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-star"></i>
-                                    <span>Innovative twist</span>
+                                    <span data-translate="banh-mi-innovative-twist">Innovative twist</span>
                                 </div>
                             </div>
                             <div class="dish-tags">
-                                <span class="tag">Innovative</span>
-                                <span class="tag">Fresh</span>
-                                <span class="tag">Satisfying</span>
+                                <span class="tag" data-translate="banh-mi-tag-innovative">Innovative</span>
+                                <span class="tag" data-translate="tag-fresh">Fresh</span>
+                                <span class="tag" data-translate="banh-mi-tag-satisfying">Satisfying</span>
                             </div>
                         </div>
                     </div>
@@ -244,26 +244,26 @@
                             <i class="fas fa-coffee" aria-label="Vietnamese Coffee Icon"></i>
                         </div>
                         <div class="dish-content">
-                            <h3>Vietnamese Coffee</h3>
-                            <p class="dish-description">Strong Vietnamese coffee served with sweetened condensed milk, creating the perfect balance of bold and sweet. Served hot or iced, it's the perfect accompaniment to any Vietnamese breakfast.</p>
+                            <h3 data-translate="coffee-title">Vietnamese Coffee</h3>
+                            <p class="dish-description" data-translate="coffee-desc">Strong Vietnamese coffee served with sweetened condensed milk, creating the perfect balance of bold and sweet. Served hot or iced, it's the perfect accompaniment to any Vietnamese breakfast.</p>
                             <div class="dish-details">
                                 <div class="detail-item">
                                     <i class="fas fa-clock"></i>
-                                    <span>Brewed fresh</span>
+                                    <span data-translate="coffee-brewed-fresh">Brewed fresh</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-leaf"></i>
-                                    <span>Traditional method</span>
+                                    <span data-translate="coffee-traditional-method">Traditional method</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-star"></i>
-                                    <span>Perfect pairing</span>
+                                    <span data-translate="coffee-perfect-pairing">Perfect pairing</span>
                                 </div>
                             </div>
                             <div class="dish-tags">
-                                <span class="tag">Traditional</span>
-                                <span class="tag">Strong</span>
-                                <span class="tag">Sweet</span>
+                                <span class="tag" data-translate="tag-traditional">Traditional</span>
+                                <span class="tag" data-translate="coffee-tag-strong">Strong</span>
+                                <span class="tag" data-translate="coffee-tag-sweet">Sweet</span>
                             </div>
                         </div>
                     </div>
@@ -273,26 +273,26 @@
                             <i class="fas fa-leaf" aria-label="Fresh Herbal Tea Icon"></i>
                         </div>
                         <div class="dish-content">
-                            <h3>Fresh Herbal Tea</h3>
-                            <p class="dish-description">Refreshing herbal tea made with fresh local herbs and flowers. A light and aromatic beverage that perfectly complements our Vietnamese breakfast dishes and aids digestion.</p>
+                            <h3 data-translate="tea-title">Fresh Herbal Tea</h3>
+                            <p class="dish-description" data-translate="tea-desc">Refreshing herbal tea made with fresh local herbs and flowers. A light and aromatic beverage that perfectly complements our Vietnamese breakfast dishes and aids digestion.</p>
                             <div class="dish-details">
                                 <div class="detail-item">
                                     <i class="fas fa-clock"></i>
-                                    <span>Brewed to order</span>
+                                    <span data-translate="tea-brewed-to-order">Brewed to order</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-leaf"></i>
-                                    <span>Local herbs</span>
+                                    <span data-translate="tea-local-herbs">Local herbs</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-star"></i>
-                                    <span>Health benefits</span>
+                                    <span data-translate="tea-health-benefits">Health benefits</span>
                                 </div>
                             </div>
                             <div class="dish-tags">
-                                <span class="tag">Refreshing</span>
-                                <span class="tag">Healthy</span>
-                                <span class="tag">Local</span>
+                                <span class="tag" data-translate="tea-tag-refreshing">Refreshing</span>
+                                <span class="tag" data-translate="tea-tag-healthy">Healthy</span>
+                                <span class="tag" data-translate="tea-tag-local">Local</span>
                             </div>
                         </div>
                     </div>
@@ -305,11 +305,11 @@
     <section class="cta-section">
         <div class="container">
             <div class="cta-content">
-                <h2>Ready to Experience Vietnamese Breakfast?</h2>
-                <p>Visit us to taste our 5 signature dishes and discover the rich flavors of Vietnam</p>
+                <h2 data-translate="dishes-cta-title">Ready to Experience Vietnamese Breakfast?</h2>
+                <p data-translate="dishes-cta-desc">Visit us to taste our 5 signature dishes and discover the rich flavors of Vietnam</p>
                 <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-primary">Visit Us Today</a>
-                    <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+                    <a href="contact.html" class="btn btn-primary" data-translate="btn-visit-today">Visit Us Today</a>
+                    <a href="contact.html" class="btn btn-outline" data-translate="btn-get-in-touch">Get in Touch</a>
                 </div>
             </div>
         </div>
@@ -323,7 +323,7 @@
                     <div class="footer-logo">
                         <img src="images/525448254_122135428898737166_1749377385241477911_n.jpg" alt="The Morning Sister Breakfast Logo" class="footer-logo-img">
                         <h4>THE MORNING SISTER</h4>
-                        <p>Authentic Vietnamese Breakfast</p>
+                        <p data-translate="footer-tagline">Authentic Vietnamese Breakfast</p>
                     </div>
                     <div class="social-links">
                         <a href="https://www.facebook.com/profile.php?id=61578834246113" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -332,26 +332,26 @@
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h4 data-translate="footer-quick-links">Quick Links</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="dishes.html">Our Dishes</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html" data-translate="nav-home">Home</a></li>
+                        <li><a href="dishes.html" data-translate="nav-dishes">Our Dishes</a></li>
+                        <li><a href="contact.html" data-translate="nav-contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contact Info</h4>
+                    <h4 data-translate="footer-contact-info">Contact Info</h4>
                     <p><i class="fas fa-phone"></i> +84 39 366 70 97</p>
                     <p><i class="fas fa-envelope"></i> themorningsisterbreakfast@gmail.com</p>
                     <p><i class="fas fa-map-marker-alt"></i> <a href="https://www.google.com/maps/place/111+Nguy%E1%BB%85n+Phan+Vinh,+C%E1%BA%A9m+An,+H%E1%BB%99i+An,+Qu%E1%BA%A3ng+Nam+51300,+Vietnam/@15.9123636,108.3371932,17z/data=!3m1!4b1!4m6!3m5!1s0x31420dfbe1911a15:0xf038debb84cf6d58!8m2!3d15.9123636!4d108.3397681!16s%2Fg%2F11yczy91lr?entry=ttu&g_ep=EgoyMDI1MDkwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="footer-link">Hoi An, Quang Nam, Vietnam</a></p>
                 </div>
                 <div class="footer-section">
-                    <h4>Opening Hours</h4>
-                    <p><i class="fas fa-clock"></i> Mon-Sun: 8:00 AM - 17:00 PM</p>
+                    <h4 data-translate="footer-opening-hours">Opening Hours</h4>
+                    <p><i class="fas fa-clock"></i> <span data-translate="footer-hours">Mon-Sun: 8:00 AM - 17:00 PM</span></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 - 2025 The Morning Sister Breakfast. Authentic Vietnamese Cuisine. All rights reserved.</p>
+                <p data-translate="footer-copyright">&copy; 2024 - 2025 The Morning Sister Breakfast. Authentic Vietnamese Cuisine. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -447,6 +447,7 @@
     }
     </script>
 
+    <script src="js/language.js"></script>
     <script src="js/script.js"></script>
     <script src="js/dishes.js"></script>
 </body>
