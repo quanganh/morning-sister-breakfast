@@ -56,7 +56,7 @@ const LANGUAGE_DATA = {
         'footer-tagline': 'Authentic Vietnamese Breakfast',
         'footer-quick-links': 'Quick Links',
         'footer-contact-info': 'Contact Info',
-        'footer-opening-hours': 'Opening Hours',
+        'footer-location': 'Location',
         'footer-hours': 'Mon-Sun: 8:00 AM - 17:00 PM',
         'footer-copyright': '© 2024 - 2025 The Morning Sister Breakfast. Authentic Vietnamese Cuisine. All rights reserved.',
 
@@ -233,7 +233,7 @@ const LANGUAGE_DATA = {
         'footer-tagline': 'Ăn Sáng Việt Nam Chính Thống',
         'footer-quick-links': 'Liên Kết Nhanh',
         'footer-contact-info': 'Thông Tin Liên Hệ',
-        'footer-opening-hours': 'Giờ Mở Cửa',
+        'footer-location': 'Địa Điểm',
         'footer-hours': 'T2-CN: 8:00 Sáng - 17:00 Chiều',
         'footer-copyright': '© 2024 - 2025 The Morning Sister Breakfast. Ẩm Thực Việt Nam Chính Thống. Bảo lưu mọi quyền.',
 
